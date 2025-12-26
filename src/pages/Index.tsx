@@ -99,7 +99,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <img src="https://cdn.poehali.dev/files/logozaCyberlogo.ru.png" alt="CyberHero" className="h-auto w-40" />
+              <img src="https://cdn.poehali.dev/files/logozaCyberHero.png" alt="CyberHero" className="h-auto w-48" />
             </div>
             <div className="hidden md:flex gap-6">
               {['home', 'about', 'services', 'coaches', 'reviews', 'contact'].map((section) => (
@@ -459,7 +459,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-2">
-              <img src="https://cdn.poehali.dev/files/logozaCyberlogo.ru.png" alt="CyberHero" className="h-auto w-40" />
+              <img src="https://cdn.poehali.dev/files/logozaCyberHero.png" alt="CyberHero" className="h-auto w-48" />
             </div>
             <div className="flex gap-6">
               {['Discord', 'Youtube', 'Twitch'].map((social) => (
