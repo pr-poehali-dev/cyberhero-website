@@ -98,11 +98,8 @@ const Index = () => {
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <img src="https://cdn.poehali.dev/files/logoza.ru(3).jpg" alt="CyberHero" className="h-10 w-10" />
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                CyberHero
-              </h1>
+            <div className="flex items-center gap-2">
+              <img src="https://cdn.poehali.dev/files/logozaCyberlogo.ru.png" alt="CyberHero" className="h-auto w-40" />
             </div>
             <div className="hidden md:flex gap-6">
               {['home', 'about', 'services', 'coaches', 'reviews', 'contact'].map((section) => (
@@ -461,11 +458,8 @@ const Index = () => {
       <footer className="py-8 px-4 border-t border-border">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex items-center gap-3">
-              <img src="https://cdn.poehali.dev/files/logoza.ru(3).jpg" alt="CyberHero" className="h-10 w-10" />
-              <div className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                CyberHero
-              </div>
+            <div className="flex items-center gap-2">
+              <img src="https://cdn.poehali.dev/files/logozaCyberlogo.ru.png" alt="CyberHero" className="h-auto w-40" />
             </div>
             <div className="flex gap-6">
               {['Discord', 'Youtube', 'Twitch'].map((social) => (
