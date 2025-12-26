@@ -99,7 +99,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <img src="https://cdn.poehali.dev/files/logoza.ru.png" alt="CyberHero" className="h-10 w-10" />
+              <img src="https://cdn.poehali.dev/files/logoza.ru(3).jpg" alt="CyberHero" className="h-10 w-10" />
               <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 CyberHero
               </h1>
@@ -462,7 +462,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-3">
-              <img src="https://cdn.poehali.dev/files/logoza.ru.png" alt="CyberHero" className="h-10 w-10" />
+              <img src="https://cdn.poehali.dev/files/logoza.ru(3).jpg" alt="CyberHero" className="h-10 w-10" />
               <div className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 CyberHero
               </div>
