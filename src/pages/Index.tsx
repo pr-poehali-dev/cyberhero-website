@@ -21,18 +21,21 @@ const Index = () => {
       icon: 'Target',
       color: 'from-orange-500 to-red-500',
       description: 'Тактика, позиционирование, стрельба',
+      price: '5 000 ₽',
     },
     {
       name: 'CS 2',
       icon: 'Crosshair',
       color: 'from-blue-500 to-cyan-500',
       description: 'Прицеливание, экономика, координация',
+      price: '5 000 ₽',
     },
     {
       name: 'Dota 2',
       icon: 'Gamepad2',
       color: 'from-purple-500 to-pink-500',
       description: 'Макро, микро, драфт и стратегия',
+      price: '5 000 ₽',
     },
   ];
 
@@ -92,9 +95,12 @@ const Index = () => {
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              CyberHero
-            </h1>
+            <div className="flex items-center gap-3">
+              <img src="https://cdn.poehali.dev/files/logoza.ru.png" alt="CyberHero" className="h-10 w-10" />
+              <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                CyberHero
+              </h1>
+            </div>
             <div className="hidden md:flex gap-6">
               {['home', 'about', 'services', 'coaches', 'reviews', 'contact'].map((section) => (
                 <button
@@ -244,7 +250,7 @@ const Index = () => {
                   <CardDescription className="text-base">{game.description}</CardDescription>
                 </CardHeader>
                 <CardContent className="relative z-10">
-                  <ul className="space-y-2 mb-6">
+                  <ul className="space-y-2 mb-4">
                     {['Персональные тренировки', 'Анализ реплеев', 'Домашние задания', 'Поддержка 24/7'].map(
                       (item, i) => (
                         <li key={i} className="flex items-center gap-2 text-sm">
@@ -254,6 +260,10 @@ const Index = () => {
                       )
                     )}
                   </ul>
+                  <div className="text-center mb-4">
+                    <div className="text-3xl font-bold text-primary">{game.price}</div>
+                    <div className="text-sm text-muted-foreground">за одну тренировку</div>
+                  </div>
                   <Button className={`w-full bg-gradient-to-r ${game.color} hover:opacity-90`}>
                     Записаться на тренировку
                   </Button>
@@ -444,8 +454,11 @@ const Index = () => {
       <footer className="py-8 px-4 border-t border-border">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              CyberHero
+            <div className="flex items-center gap-3">
+              <img src="https://cdn.poehali.dev/files/logoza.ru.png" alt="CyberHero" className="h-10 w-10" />
+              <div className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                CyberHero
+              </div>
             </div>
             <div className="flex gap-6">
               {['Discord', 'Youtube', 'Twitch'].map((social) => (
