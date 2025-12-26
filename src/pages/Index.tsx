@@ -22,6 +22,7 @@ const Index = () => {
       color: 'from-orange-500 to-red-500',
       description: 'Тактика, позиционирование, стрельба',
       price: '5 000 ₽',
+      discountPrice: '2 500 ₽',
     },
     {
       name: 'CS 2',
@@ -29,6 +30,7 @@ const Index = () => {
       color: 'from-blue-500 to-cyan-500',
       description: 'Прицеливание, экономика, координация',
       price: '5 000 ₽',
+      discountPrice: '2 500 ₽',
     },
     {
       name: 'Dota 2',
@@ -36,6 +38,7 @@ const Index = () => {
       color: 'from-purple-500 to-pink-500',
       description: 'Макро, микро, драфт и стратегия',
       price: '5 000 ₽',
+      discountPrice: '2 500 ₽',
     },
   ];
 
@@ -261,7 +264,11 @@ const Index = () => {
                     )}
                   </ul>
                   <div className="text-center mb-4">
-                    <div className="text-3xl font-bold text-primary">{game.price}</div>
+                    <div className="flex items-center justify-center gap-3 mb-1">
+                      <span className="text-2xl text-muted-foreground line-through">{game.price}</span>
+                      <span className="text-3xl font-bold text-primary">{game.discountPrice}</span>
+                    </div>
+                    <Badge className="mb-2 bg-accent text-white border-0">-50% на первую тренировку</Badge>
                     <div className="text-sm text-muted-foreground">за одну тренировку</div>
                   </div>
                   <Button className={`w-full bg-gradient-to-r ${game.color} hover:opacity-90`}>
